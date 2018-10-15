@@ -7,8 +7,10 @@ import { ProfileComponent } from './component/profile/profile.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { NavComponent } from './component/nav/nav.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 const appRoutes : Routes = [
+	{ path: '', component: DashboardComponent },
 	{ path: 'profile', component: ProfileComponent },
 	{ path: 'login', component: LoginComponent },
 	{ path: 'register', component: RegisterComponent }
@@ -20,7 +22,8 @@ const appRoutes : Routes = [
     ProfileComponent,
     LoginComponent,
     RegisterComponent,
-    NavComponent
+    NavComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
